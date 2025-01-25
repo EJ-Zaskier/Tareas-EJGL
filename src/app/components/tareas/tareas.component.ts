@@ -21,7 +21,7 @@ export class TareasComponent implements OnInit {
       nombre: this.nombreTarea,
       estado: false
    }
-   //Agregar obeto al array
+   //Agregar el obeto al array
    this.listaTareas.push(tarea);
    //Limpiar el input
    this.nombreTarea = '';
