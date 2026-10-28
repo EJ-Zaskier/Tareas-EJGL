@@ -1,27 +1,34 @@
-# Tareas5C
+# Tareas: lista de pendientes en Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+Aplicación sencilla para agregar tareas, marcarlas como completadas y eliminarlas. La hice como práctica de los fundamentos de Angular: componentes, modelos, data binding y pruebas unitarias.
 
-## Development server
+*Angular 12 · TypeScript · Karma / Jasmine*
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Funciones
 
-## Code scaffolding
+- Agregar tareas nuevas.
+- Marcar o desmarcar una tarea como completada.
+- Eliminar tareas.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Estructura
 
-## Build
+```text
+src/app/components/navbar   barra de navegación
+src/app/components/tareas   lista y formulario de tareas
+src/app/models/Tarea        modelo (nombre, estado)
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Ejecutar
 
-## Running unit tests
+```bash
+npm install
+npx ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Abre `http://localhost:4200`.
 
-## Running end-to-end tests
+## Pruebas
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npx ng test
+```
